@@ -20,16 +20,11 @@ tgbot=Client(
 async def start_message(bot, message):
     if FSub_Channel:
         try:
-            user = await bot.get_chat_member(FSub_Channel, message.from_user.id)
-            if user.status == "kicked out":
-                await message.reply_text(KICKED.format(message.from_user.mention))
-                return
         except UserNotParticipant:
-            await message.reply_text(
-                text=(FSUB.format(message.from_user.mention)),
+            await message.reply_text("malik"
                 reply_markup=InlineKeyboardMarkup(
                   [[
-                    InlineKeyboardButton("Join Our Updates Channel 📢", url=f"t.me/{FSub_Channel}")
+                    InlineKeyboardButton("Join Our Updates Channel 📢", callback_data="owner_info")
                  ],[
                     InlineKeyboardButton("Try Again 🔄", url="t.me/the_fun_mallu_bot?start")
                   ]]
