@@ -16,7 +16,7 @@
       "force subscription"
     ],
     "website": "https://github.com/Joelkb/The-Fun-Bot",
-    "repository": "https://github.com/Joelkb/The-Fun-Bot",
+    "repository": "https://github.com/savezmalik7960/The-Fun-Bot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
